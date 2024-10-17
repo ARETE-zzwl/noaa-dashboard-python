@@ -17,7 +17,7 @@ year_num = 20
 extremes_num = 10
 
 # 使用Kaggle API从Kaggle上下载 NOAA GSOD 数据集
-os.system('kaggle datasets download -d noaa/noaa-global-surface-summary-of-the-day-gsod')
+os.system('kaggle datasets download -d noaa/noaa-global-surface-summary-of-the-day')
 os.system('unzip noaa-global-surface-summary-of-the-day-gsod.zip -d ../input/gsod_all_years')
 
 # 获取所有年份的数据文件并排序，只取最近 year_num 年的数据
